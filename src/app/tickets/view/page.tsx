@@ -138,7 +138,7 @@ export default function TicketBarcodeView() {
       {/* Fixed Bottom Action Bar */}
       <div className="fixed bottom-0 w-full bg-[#f2f2f4] pb-safe pt-2 px-4 z-50">
         {/* Pagination Indicator */}
-        <div className="flex justify-center mb-15">
+        <div className="flex justify-center mb-4">
           <div className="bg-gray-300/80 px-4 py-1.5 rounded-full">
             <span className="text-[13px] font-bold text-gray-600">
               {activeIndex} of {totalTickets}
