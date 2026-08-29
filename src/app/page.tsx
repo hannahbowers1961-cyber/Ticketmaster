@@ -10,7 +10,11 @@ export default function Home() {
         <div className="w-10"></div> {/* Spacer for center alignment */}
         <div className="flex items-center space-x-2">
           <h1 className="text-lg font-semibold">My Tickets</h1>
-          <span className="text-2xl leading-none">🇺🇸</span>
+          <img 
+            src="https://flagcdn.com/w40/us.png" 
+            alt="US" 
+            className="w-6 h-6 object-cover rounded-full border border-gray-200"
+          />
         </div>
         <button className="text-sm font-medium text-gray-200">Help</button>
       </header>
@@ -45,7 +49,7 @@ export default function Home() {
             {/* Overlapping Date Badge */}
             <div className="absolute -top-7 left-0 bg-black px-3 py-1.5">
               <p className="text-[11px] font-bold tracking-wide uppercase">
-                FRI, AUG 28, 2026 • 8:00 PM
+                SAT, OCT 31, 2026 • 8:00 PM
               </p>
             </div>
 

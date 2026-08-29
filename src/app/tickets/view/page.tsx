@@ -44,7 +44,7 @@ export default function TicketBarcodeView() {
         </Link>
         <div className="flex-1 overflow-hidden">
           <h1 className="text-[15px] font-extrabold truncate text-black">Harry Styles: Together, Together. Harryween.</h1>
-          <p className="text-[11px] text-gray-500 truncate mt-0.5">Oct 30, 2026, 8:00 PM - Madison Square Garden - New York, NY</p>
+          <p className="text-[11px] text-gray-500 truncate mt-0.5">Oct 31, 2026, 8:00 PM - Madison Square Garden - New York, NY</p>
         </div>
       </header>
 
@@ -111,7 +111,7 @@ export default function TicketBarcodeView() {
                   </div>
                   <div>
                     <p className="text-[10px] font-bold text-gray-400 tracking-wide mb-0.5">ROW</p>
-                    <p className="text-2xl font-extrabold">C</p>
+                    <p className="text-2xl font-extrabold">18</p>
                   </div>
                   <div>
                     <p className="text-[10px] font-bold text-gray-400 tracking-wide mb-0.5">SEAT</p>

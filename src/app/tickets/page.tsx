@@ -53,7 +53,7 @@ export default function TicketDetails() {
 
       <div className="bg-[#1a1a1a] text-white w-full relative">
         <div className="absolute -top-7 left-0 bg-[#1a1a1a] px-4 py-1.5 z-10">
-          <p className="text-[12px] font-bold tracking-wide uppercase">FRI, AUG 28, 2026 • 8:00 PM</p>
+          <p className="text-[12px] font-bold tracking-wide uppercase">SAT, OCT 31, 2026 • 8:00 PM</p>
         </div>
         <div className="px-4 pb-5 pt-6">
           <h1 className="text-[22px] font-extrabold uppercase leading-tight tracking-tight mb-3">HARRY STYLES: TOGETHER,<br />TOGETHER</h1>
@@ -87,11 +87,11 @@ export default function TicketDetails() {
       </div>
 
       <div className="px-4 space-y-4">
-        {[8, 9, 10, 11].map((seat) => (
+        {[10, 11, 12, 13].map((seat) => (
           <div key={seat} className="border border-gray-200 rounded-sm overflow-hidden">
             <div className="bg-[#f0f0f0] py-2 px-4 border-b border-gray-200"><p className="text-[11px] font-bold tracking-wide text-gray-700">AMERICAN EXPRESS PRESALE</p></div>
             <div className="flex justify-between px-6 py-4 bg-white text-center">
-              <div><p className="text-[11px] font-bold text-gray-500 tracking-wide mb-1">SECTION</p><p className="text-xl font-bold">105</p></div>
+              <div><p className="text-[11px] font-bold text-gray-500 tracking-wide mb-1">SECTION</p><p className="text-xl font-bold">119</p></div>
               <div><p className="text-[11px] font-bold text-gray-500 tracking-wide mb-1">ROW</p><p className="text-xl font-bold">18</p></div>
               <div><p className="text-[11px] font-bold text-gray-500 tracking-wide mb-1">SEAT</p><p className="text-xl font-bold">{seat}</p></div>
             </div>
@@ -129,7 +129,7 @@ export default function TicketDetails() {
               </div>
               <div className="px-4 pb-4 relative z-10 -mt-3">
                 <div className="bg-[#151515] inline-block pr-3 py-1">
-                  <p className="text-[10px] font-bold tracking-wide uppercase text-[#c3a976]">FRI, AUG 28, 2026 • 8:00 PM</p>
+                  <p className="text-[10px] font-bold tracking-wide uppercase text-[#c3a976]">SAT, OCT 31, 2026 • 8:00 PM</p>
                 </div>
                 <h4 className="text-[13px] font-extrabold uppercase leading-tight mt-0.5 mb-1">HARRY STYLES: TOGETHER,<br />TOGETHER</h4>
                 <p className="text-[10px] text-gray-400">Madison Square Garden — New York, NY</p>
@@ -137,7 +137,7 @@ export default function TicketDetails() {
             </div>
             <div className="w-[40%] flex flex-col justify-center items-center text-center p-4">
               <h3 className="text-[18px] font-extrabold uppercase leading-tight mb-2">YOU GOT<br />TICKETS!</h3>
-              <p className="text-[11px] font-medium text-gray-300 uppercase tracking-wide">SEC 105, ROW 18</p>
+              <p className="text-[11px] font-medium text-gray-300 uppercase tracking-wide">SEC 119, ROW 18</p>
             </div>
           </div>
           <div className="bg-[#f0f0f2] p-5">
@@ -253,7 +253,7 @@ export default function TicketDetails() {
                 
                 <div className="p-4 bg-gray-50 min-h-[30vh]">
                   <div className="flex justify-between items-center mb-4">
-                    <p className="text-[15px] text-black">Sec 105, Row 18</p>
+                    <p className="text-[15px] text-black">Sec 119, Row 18</p>
                     <p className="text-[13px] text-black font-semibold flex items-center">
                       <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M4 5v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"></path></svg>
                       4 Tickets
@@ -261,7 +261,7 @@ export default function TicketDetails() {
                   </div>
                   
                   <div className="flex justify-between space-x-2">
-                    {[8, 9, 10, 11].map(seat => {
+                    {[10, 11, 12, 13].map(seat => {
                       const isSelected = selectedSeats.includes(seat);
                       return (
                         <button 
