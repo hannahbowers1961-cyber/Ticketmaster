@@ -4,16 +4,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "My Tickets",
   description: "Mobile ticketing experience",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+  },
 };
 
-// This is the magic block that fixes the mobile top bar
 export const viewport: Viewport = {
-  themeColor: "#1a1a1a", // Matches the dark header of your app
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  viewportFit: "cover", // Pushes the website to the absolute edges (under the notch)
+  viewportFit: "cover", // This stretches the site to the absolute top edge
 };
 
 export default function RootLayout({
@@ -23,8 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* Added a default dark background here to fix the "white bounce" effect when scrolling too far up */}
-      <body className="bg-[#111111] antialiased">
+      <body className="antialiased">
         {children}
       </body>
     </html>
