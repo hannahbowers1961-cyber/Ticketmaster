@@ -74,9 +74,9 @@ export default function TicketBarcodeView() {
                 
                 {/* The Floating Barcode */}
                 <div className="absolute top-4 left-4 right-4 bg-white rounded-lg shadow-lg p-3 z-10">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-[11px] font-bold text-gray-800">Screenshots won't get you in</span>
-                    <button className="text-gray-400">
+                  <div className="relative flex items-center justify-center mb-2">
+                    <span className="text-[11px] font-bold text-gray-800 text-center">Screenshots won't get you in</span>
+                    <button className="absolute right-0 text-gray-400">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M21 2v6h-6"></path>
                         <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
@@ -87,7 +87,7 @@ export default function TicketBarcodeView() {
                   {/* Actual Barcode Image */}
                   <div className="h-16 w-full relative bg-white flex items-center justify-center overflow-hidden">
                     <img 
-                      src="https://upload.wikimedia.org/wikipedia/commons/d/d0/PDF417_barcode.svg" 
+                      src="/images/Barcode.png"
                       alt="Barcode" 
                       className="w-full h-full object-fill px-2 py-1"
                     />
@@ -104,7 +104,7 @@ export default function TicketBarcodeView() {
               {/* Bottom Info Section (Where your redacted block was) */}
               <div className="flex-1 bg-white px-6 pb-6 pt-4 flex flex-col justify-end">
                 {/* Standard Ticket Info placeholders */}
-                <div className="flex justify-between text-center mb-4 border-b border-gray-100 pb-4">
+                <div className="flex justify-between text-center mb-4 border-b border-gray-100 p-8">
                   <div>
                     <p className="text-[10px] font-bold text-gray-400 tracking-wide mb-0.5">SEC</p>
                     <p className="text-2xl font-extrabold">119</p>
@@ -138,7 +138,7 @@ export default function TicketBarcodeView() {
       {/* Fixed Bottom Action Bar */}
       <div className="fixed bottom-0 w-full bg-[#f2f2f4] pb-safe pt-2 px-4 z-50">
         {/* Pagination Indicator */}
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center mb-15">
           <div className="bg-gray-300/80 px-4 py-1.5 rounded-full">
             <span className="text-[13px] font-bold text-gray-600">
               {activeIndex} of {totalTickets}

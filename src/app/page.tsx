@@ -27,19 +27,7 @@ export default function Home() {
 
       {/* Main Content Area (Blurred Background Effect) */}
       <main className="flex-1 overflow-y-auto bg-gradient-to-b from-[#3a3026] to-[#1a1c19] px-4 pt-6 pb-24">
-        
-        {/* Next Event Header */}
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="text-[15px] text-gray-200">
-            Next Event: <span className="font-bold text-white">Today</span>
-          </h2>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-300">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
-        </div>
+      
 
         {/* Ticket Card */}
         <div className="bg-black w-full rounded-sm overflow-hidden shadow-xl">

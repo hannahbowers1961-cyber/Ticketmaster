@@ -104,8 +104,8 @@ export default function TicketDetails() {
       <div className="px-4 mb-6">
         <div className="border border-gray-200 rounded-sm overflow-hidden bg-white">
           <div className="relative h-48 w-full bg-gray-300">
-            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Map Placeholder" className="w-full h-full object-cover" />
-            <div className="absolute top-3 left-4"><span className="text-white text-[22px] font-bold drop-shadow-md shadow-black">Madison Square Garden</span></div>
+            <img src="/images/MSG.png" alt="Map Placeholder" className="w-full h-full object-cover" />
+            <div className="absolute top-3 left-4"></div>
             <div className="absolute top-3 right-3 flex flex-col bg-white/90 rounded-sm shadow-sm overflow-hidden">
               <button className="w-8 h-8 flex items-center justify-center text-black border-b border-gray-300 text-xl font-light">+</button>
               <button className="w-8 h-8 flex items-center justify-center text-black text-xl font-light">-</button>
@@ -148,16 +148,25 @@ export default function TicketDetails() {
       </div>
 
       {/* Action Bar - Triggers the Transfer Flow */}
-      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] flex items-center border border-gray-100 z-40">
-        <button onClick={() => setTransferStep('auth-loading')} className="flex flex-col items-center justify-center px-8 py-3 space-y-1">
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] flex items-center border border-gray-100 z-40 overflow-hidden">
+        
+        <button onClick={() => setTransferStep('auth-loading')} className="w-[110px] flex flex-col items-center justify-center py-3 space-y-1">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a58d6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           <span className="text-[12px] font-bold text-gray-800">Transfer</span>
         </button>
+        
         <div className="w-[1px] h-10 bg-gray-200"></div>
-        <button className="flex flex-col items-center justify-center px-8 py-3 space-y-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+        
+        <button className="w-[110px] flex flex-col items-center justify-center py-3 space-y-1">
+          {/* New refresh-cw Icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
           <span className="text-[12px] font-bold text-gray-400">Sell</span>
         </button>
+
       </div>
 
 
@@ -185,7 +194,7 @@ export default function TicketDetails() {
               <div className="p-6 bg-white flex-1">
                 <h3 className="text-[22px] font-bold leading-tight mb-4 text-black">Authenticate Your<br/>Account</h3>
                 <p className="text-[15px] text-gray-700 mb-8 leading-snug">
-                  A one-time code has been sent to <span className="font-bold">*****1234</span>.<br/>Please enter your code below to continue.
+                  A one-time code has been sent to <span className="font-bold">*****7934</span>.<br/>Please enter your code below to continue.
                 </p>
                 
                 <div className="mb-8">
@@ -277,7 +286,7 @@ export default function TicketDetails() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="flex justify-between items-center p-4 border-t border-gray-200 pb-safe bg-white">
+                <div className="flex justify-between items-center p-4 border-t border-gray-200 mt-10 mb-4 pb-safe bg-white">
                   <span className="text-[15px] font-medium text-gray-700">{selectedSeats.length} Selected</span>
                   <button 
                     disabled={selectedSeats.length === 0}
@@ -312,7 +321,7 @@ export default function TicketDetails() {
                   <p className="text-center text-[14px] text-gray-600 px-6">Select an Email or mobile number to transfer tickets to your recipient.</p>
                 </div>
 
-                <div className="p-4 border-t border-gray-200 pb-safe bg-white flex items-center">
+                <div className="p-4 border-t border-gray-200 mt-10 mb-2 pb-safe bg-white flex items-center">
                   <button onClick={() => setTransferStep('select-tickets')} className="text-[#0a58d6] text-[15px] font-semibold flex items-center">
                     <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back
                   </button>
