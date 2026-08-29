@@ -35,7 +35,7 @@ export default function TicketBarcodeView() {
       `}} />
 
       {/* Top Header */}
-      <header className="fixed top-0 w-full bg-white z-50 px-4 pt-[calc(env(safe-area-inset-top)+12px)] pb-3 flex items-center border-b border-gray-200">
+      <header className="fixed top-0 w-full bg-white z-50 px-4 py-3 flex items-center border-b border-gray-200">
         <Link href="/tickets" className="mr-3 p-1">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>

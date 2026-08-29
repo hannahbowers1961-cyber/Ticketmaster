@@ -6,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#111111] flex flex-col font-sans text-white">
       
       {/* Top Header */}
-      <header className="bg-[#1a1a1a] pt-[calc(env(safe-area-inset-top)+12px)] pb-4 px-4 flex items-center justify-between">
+      <header className="bg-[#1a1a1a] pt-12 pb-4 px-4 flex items-center justify-between">
         <div className="w-10"></div> {/* Spacer for center alignment */}
         <div className="flex items-center space-x-2">
           <h1 className="text-lg font-semibold">My Tickets</h1>
