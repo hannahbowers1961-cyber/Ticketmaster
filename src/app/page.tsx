@@ -56,7 +56,7 @@ export default function Home() {
             {/* Event Title */}
             <div className="pt-4 px-4 pb-3">
               <h3 className="text-[22px] font-extrabold uppercase leading-tight tracking-tight">
-                HARRY STYLES: TOGETHER,<br />TOGETHER
+                HARRY STYLES: TOGETHER,<br />TOGETHER. HARRYWEEN
               </h3>
             </div>
 
