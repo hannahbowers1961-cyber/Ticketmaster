@@ -56,7 +56,7 @@ export default function TicketDetails() {
           <p className="text-[12px] font-bold tracking-wide uppercase">SAT, OCT 31, 2026 • 8:00 PM</p>
         </div>
         <div className="px-4 pb-5 pt-6">
-          <h1 className="text-[22px] font-extrabold uppercase leading-tight tracking-tight mb-3">HARRY STYLES: TOGETHER,<br />TOGETHER.</h1> HARRYWEEN.
+          <h1 className="text-[22px] font-extrabold uppercase leading-tight tracking-tight mb-3">HARRY STYLES: TOGETHER,<br />TOGETHER. HARRYWEEN.</h1>
           <div className="flex justify-between items-center text-gray-300 mb-5">
             <p className="text-[14px]">Madison Square Garden — New York, NY</p>
             <div className="flex items-center space-x-1">
